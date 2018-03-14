@@ -1,0 +1,6 @@
+<launch>
+    <node name="hardware" pkg="battery_state_controller" type="fake_battery_hw" output="screen"/>
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" args="battery_state_controller" output="screen"/>
+    <param name="battery_state_controller/type" value="battery_state_controller/BatteryStateController"/>
+    <node name="echo" pkg="rostopic" type="rostopic" args="echo /left_battery" output="screen"/>
+</launch>

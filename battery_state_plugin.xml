@@ -1,0 +1,7 @@
+<library path="lib/libbattery_state_controller">
+  <class name="battery_state_controller/BatteryStateController" type="battery_state_controller::BatteryStateController" base_class_type="controller_interface::ControllerBase">
+  <description>
+    This controller publishes the readings of all available battery state as sensor_msgs/BatteryState message. The controller expects a BatteryStateInterface type of hardware interface.
+  </description>
+  </class>
+</library>
